@@ -52,6 +52,10 @@ app.get('/', (request, response) => {
     );
 });
 
+app.get('/debug-sentry', function mainHandler(req, res) {
+    throw new Error('My first Sentry error!');
+});
+
 app.use(
     (err: Error, request: Request, response: Response, next: NextFunction) => {
         if (err instanceof AppError) {
