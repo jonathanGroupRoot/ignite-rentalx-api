@@ -43,6 +43,6 @@ jobs:
           script: 
             cd ~/app/ignite-rentalx-api
             yarn
-            ./node_modules/.bin/typeorm migration:run
+            yarn typeorm migration:run
             pm2 restart rentx_api
 
