@@ -21,9 +21,10 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use('/avatar', express.static(`${upload.tmpFolder}/avatar`));
 app.use('/cars', express.static(`${upload.tmpFolder}/cars`));
 app.use(router);
+
 app.get('/', (request, response) => {
     return response.send(
-        'Vão trabalhar seus bahiano, principalmente o joão vitor arrocha fiii',
+        'Trabalhar seus vagabundos, principalmente você joão vitor arrochaaa fiii',
     );
 });
 
