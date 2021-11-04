@@ -24,7 +24,7 @@ const app = express();
 app.use(rateLimiter);
 
 Sentry.init({
-    dsn: process.env.SENTRY_DSN,
+    dsn: 'https://b09bc4d27d9843b1bb24113fa7cc21ed@o1060381.ingest.sentry.io/6050072',
     integrations: [
         new Sentry.Integrations.Http({ tracing: true }),
         new Tracing.Integrations.Express({ app }),
